@@ -61,7 +61,7 @@ a {
 .promo-banner {
     width: 100%;
     background-color:#cee6e5; 
-    border-bottom: 1px solid #e0f2fe;
+    /* border-bottom: 1px solid #e0f2fe; */
     padding: 28px 130px; 
 }
 
