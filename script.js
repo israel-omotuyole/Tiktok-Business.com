@@ -13,3 +13,24 @@ passwordBtn.addEventListener('click', () => {
         passwordInput.type = 'password';
     }
 })
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const counterElement = document.getElementById("brand-counter-text");
+
+    const brandSwiper = new Swiper('.brand-swiper-container', {
+        loop: false,
+        speed: 500,
+        allowTouchMove: true, 
+        navigation: {
+            nextEl: '.brand-next',
+            prevEl: '.brand-prev',
+        },
+        on: {
+            slideChange: function () {
+                let currentSlideNum = this.realIndex + 1;
+                counterElement.textContent = "0" + currentSlideNum + " / 03";
+            }
+        }
+    });
+});
