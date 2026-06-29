@@ -861,9 +861,164 @@ a {
     font-weight: 700;
 }
 
+.mb-menu {
+    display: none;
+}
+
 
 /* mobile-view */
 @media (max-width: 480px) {
+    .nav-menu {
+        display: none;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .mb-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1.7rem; */
+        /* padding: 0.5rem 0.5rem; */
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mb-logo {
+        display: block;
+    }
+
+    .mbnav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem; 
+        background-color: #fff;
+    }
+
+    .mbgetstart-logo {
+        width: 90%;
+    }
+
+    .mbheader-button {
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.8rem 1.2rem;
+        border-radius: 40px;
+    }
+
+    .badge-icon {
+        display: none;
+    }
+    
+    .banner-container {
+        display: block;
+        text-align: center;
+    }
+
+    .banner-content {
+        display: block;
+        /* text-align: center; */
+    }
+
+    .promo-banner {
+        padding: 1.2rem 1.6rem;
+    }
+
+    .claim-link {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        padding-top: 0.4rem;
+    }
+
+    .banner-actions {
+        gap: 0;
+    }
+
+    .banner-text {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section {
+        width: 100%;
+        padding: 2rem 2.5rem;
+        padding-top: 13rem;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .hero-description {
+        width: 100%;
+        line-height: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .stats-main-title {
+        width: 100%;
+        font-size: 2.4rem;
+    }
+
+    .stats-border-right {
+        border-right: none;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .stats-grid {
+        flex-direction: column;
+    }
+    
+    .stats-text {
+        padding-bottom: 2rem;
+    }
+
+    .stats-section {
+        padding: 1.5rem;
+    }
+
+    .stats-source {
+        text-align: left;
+        width: 100%;
+    }
+
+    .why-container {
+        flex-direction: column;
+    }
+
+    .why-main-title {
+        font-size: 2.6rem;
+    }
+
+    .why-left-column {
+        padding-bottom: 2rem;
+    }
+
+    .why-cta-btn {
+        padding: 0.8rem 2.6rem;
+    }
+
+    .why-right-column {
+        width: 100%;
+    }
+
+    .why-item-title {
+        font-size: 1.9rem;
+    }
 
 }
 
